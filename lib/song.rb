@@ -57,6 +57,7 @@ class Song
   def artist=(name)
     @artist = name
     name.add_song(self)
+<<<<<<< HEAD
   end
 
   def self.new_from_filename(filename)
@@ -75,5 +76,7 @@ class Song
   def self.create_from_filename(filename)
     song = Song.new_from_filename(filename)
     # song.save  !!! What's the purpose of this line? What's the purpose of this method??
+=======
+>>>>>>> f61c64533f87f47cacd32362c637051720c97f6d
   end
 end
