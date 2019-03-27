@@ -21,16 +21,3 @@ class MusicImporter
     files.each {|file| Song.create_from_filename(file)}
   end
 end
-# class MusicImporter
-#   attr_accessor :path, :files
-# 
-#   def initialize(path)
-#     @path = path
-#     files = []
-#   end
-# 
-#   def files
-#     Dir.glob("#{@path}/*.mp3").each {|file| files << file.gsub("#{@path}/", "")}
-#   end
-# 
-# end
