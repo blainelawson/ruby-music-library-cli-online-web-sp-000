@@ -27,6 +27,9 @@ class MusicLibraryController
   end
 
   def music_library_controller
+    if call == "list songs"
+      list_songs
+    end
   end
 
   def song_sort
