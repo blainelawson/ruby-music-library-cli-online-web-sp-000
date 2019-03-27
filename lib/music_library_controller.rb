@@ -26,6 +26,9 @@ class MusicLibraryController
     end
   end
 
+  def music_library_controller
+  end
+
   def song_sort
     Song.all.sort{|a,b| a.name <=> b.name}
   end
