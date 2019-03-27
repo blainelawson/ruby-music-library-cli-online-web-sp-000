@@ -29,7 +29,7 @@ class MusicLibraryController
       list_songs
     end
   end
-  
+
   def song_sort
     Song.all.sort{|a,b| a.name <=> b.name}
   end
