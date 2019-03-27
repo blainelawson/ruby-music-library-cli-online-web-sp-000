@@ -29,14 +29,7 @@ class MusicLibraryController
       list_songs
     end
   end
-
-  def music_library_controller
-    choice = call
-    if choice == "list songs"
-      list_songs
-    end
-  end
-
+  
   def song_sort
     Song.all.sort{|a,b| a.name <=> b.name}
   end
