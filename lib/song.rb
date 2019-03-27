@@ -19,7 +19,7 @@ class Song
        self.genre = genre
     end
 
-    self
+    # self
   end
 
   def self.all
